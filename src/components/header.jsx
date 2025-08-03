@@ -18,7 +18,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full font-Inter">
       <header className="p-5 w-full shadow-lg z-0">
         <div className="flex justify-between">
           <img src={logo} alt="" className="w-12 lg:w-24 md:24 xl:24" />
@@ -28,7 +28,7 @@ const Header = () => {
         </div>
       </header>
       <nav>
-        <NavMenu  className={`z-50 ${isMenuOpen? "":"trasition-x-full"}`}/>
+        <NavMenu/>
       </nav>
     </div>
   );

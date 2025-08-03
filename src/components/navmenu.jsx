@@ -59,7 +59,7 @@ const NavMenu = () => {
      <AnimatePresence>
       {isMenuOpen && (
         
-    <motion.div className="w-full bg-gray-400/60 h-screen absolute top-0 left-0 justify-end flex md:hidden z-50" variants={navVariants}
+    <motion.div className="font-Inter w-full bg-gray-400/60 h-screen absolute top-0 left-0 justify-end flex md:hidden z-50" variants={navVariants}
           initial="hidden"
           animate="visible"
           exit="exit">
@@ -74,11 +74,11 @@ const NavMenu = () => {
         </div>
 
         {/* navigation Menus */}
-        <div className="mt-10">
+        <div className="mt-7">
           {nav.map((item, index) => (
             <ul key={index}>
               
-              <li className="font-medium border-b-1 border-red-700 py-2 uppercase">
+              <li className="font-semibold font-Inter border-b-1 border-red-700 py-2 uppercase">
                 <Link to={item.path} onClick={closeMenu}>
                 {item.name}
               </Link>
@@ -87,8 +87,8 @@ const NavMenu = () => {
           ))}
 
           {/* contact information */}
-          <div className="mt-15">
-            <h1 className="font-bold text-xl">CONTACT INFORMATION</h1>
+          <div className="mt-9">
+            <h1 className="font-bold text-xl">CONTACT INFO</h1>
             <div>
               <p
                 className="my-2 flex items-center text-md gap-3"
