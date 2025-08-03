@@ -14,3 +14,49 @@ If you are developing a production application, we recommend using TypeScript wi
 # richard-website
 # richard-website
 # richard-website
+
+
+
+ <div
+       
+      >
+        <div >
+          <div>
+            <img src={logo} alt=""  />
+            <button
+            
+            >
+              X
+            </button>
+          </div>
+          <div>
+            {nav.map((element, index) => (
+              <div key={index} className="">
+                <ul>
+                  <Link to={element.path}>
+                    <li
+                      data-aos="zoom-in-left"
+                      data-aos-easing="ease-in-sine"
+                      data-aos-duration="2000"
+                      data-aos-delay="600"
+                      className="border-0 border-b-[0.5px] uppercase py-2 "
+                    >
+                      {element.name}
+                    </li>
+                  </Link>
+                </ul>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-16 flex flex-col ">
+            <h1 className=" font-medium  text-2xl">CONTACT INFO</h1>
+            <div className="text-sm font-medium ">
+              
+              <p></p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+   
