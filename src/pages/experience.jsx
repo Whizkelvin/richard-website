@@ -2,7 +2,7 @@ import React from 'react'
 
 const Experience = () => {
   return (
-    <div>experience</div>
+    <div  className='mt-[18.5%]'>experience</div>
   )
 }
 

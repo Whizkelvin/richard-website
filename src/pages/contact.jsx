@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div  className='mt-[18.5%]'>Contact</div>
   )
 }
 

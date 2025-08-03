@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div>about</div>
+    <div className='mt-[18.5%]'>about</div>
   )
 }
 

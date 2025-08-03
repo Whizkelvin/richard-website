@@ -2,7 +2,7 @@ import React from 'react'
 
 const Course = () => {
   return (
-    <div>course</div>
+    <div  className='mt-[18.5%]'>course</div>
   )
 }
 
