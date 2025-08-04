@@ -5,7 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import { menuContext } from "./MenuProvider";
-import NavMenu from "./navMenu";
+import NavMenu from "./navmenu";
 
 const Header = () => {
   const { updateMenu, isMenuOpen } = useContext(menuContext);
