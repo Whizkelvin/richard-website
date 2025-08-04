@@ -5,7 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import { menuContext } from "./MenuProvider";
-import NavMenu from "./navmenu";
+import NavMenu from "./navMenu";
 
 const Header = () => {
   const { updateMenu, isMenuOpen } = useContext(menuContext);
@@ -18,7 +18,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="fixed w-full font-Inter top-0 left-0 h-[14%] z-50 bg-[#ffffe3] shadow-xl rounded-b-md">
+    <div className="fixed w-full font-Inter top-0 left-0 h-[10%] z-50 bg-[#ffffe3] shadow-xl rounded-b-md">
       <header className="p-5 w-full  z-0 ">
         <div className="flex justify-between items-center">
           <img src={logo} alt="" className="w-12 lg:w-24 md:24 xl:24" />

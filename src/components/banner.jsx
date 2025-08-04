@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import pic from '../assets/my-foto-1.jpg'
+import { useNavigate } from 'react-router-dom';
 
 
 const banner = () => {
@@ -12,6 +13,8 @@ const banner = () => {
       once: false     // whether animation should happen only once
     });
   }, []);
+
+  const navigate = useNavigate()
   return (
     <div>
         <div className='relative w-full z-0 font-Inter'>
@@ -20,6 +23,7 @@ const banner = () => {
             <p className='font-inter text-4xl text-white font-bold mb-4'>Drs. Agbeko Kwame Nyaku</p>
             <p className='text-white font-inter mb-4'>TOLK-VERTALER</p>
             <p className='text-white font-inter'>EWE - TWI - GA - PIDGIN - KRIO - ENGELS - FRANS</p>
+            <button className='bg-red-700 text-white p-2 mt-4 cursor-pointer rounded-sm' onClick={() => navigate("/about")}>KNOW MORE</button>
             </div>
         </div>
        
